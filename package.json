@@ -1,0 +1,11 @@
+{
+  "name": "social-sharing-buttons",
+  "version": "1.2.2",
+  "description": "=== Social Sharing Buttons ===\r Contributors: jcrr\r Tags: social, sharing, buttons, media, facebook, twitter, whatsapp, linkedin \r Donate link: https://www.paypal.me/jcrr\r Requires at least: 4.0\r Tested up to: 5.2\r Stable tag: 1.2.2\r License: GPL3\r License URI: https://www.gnu.org/licenses/gpl.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
