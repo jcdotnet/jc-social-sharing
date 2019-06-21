@@ -2,8 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Social sharing buttons and counters v1.0.0\n"
-"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2019-06-10 21:41+0200\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/social-sharing-"
+"buttons-and-counters\n"
+"POT-Creation-Date: 2019-06-21 16:06:15+00:00\n"
 "PO-Revision-Date: \n"
 "Last-Translator: JC <info@josecarlosroman.com>\n"
 "Language-Team: JC <info@josecarlosroman.com>\n"
@@ -58,11 +59,11 @@ msgstr "Introduce tu nombre si quieres que sea añadido a los tweets"
 msgid "Buttons text "
 msgstr "Textos en los botones "
 
-#: inc/admin-page.php:75 inc/admin-page.php:185
+#: inc/admin-page.php:75 inc/admin-page.php:192
 msgid "Yes"
 msgstr "Sí"
 
-#: inc/admin-page.php:76 inc/admin-page.php:186
+#: inc/admin-page.php:76 inc/admin-page.php:193
 msgid "No"
 msgstr "No"
 
@@ -74,59 +75,67 @@ msgstr ""
 "¿Mostrar los nombres de las redes sociales? Puedes ocultarlos si necesitas "
 "espacio para los botones"
 
-#: inc/admin-page.php:83
+#: inc/admin-page.php:81
+msgid "Always hide the social networks names on mobile screen sizes."
+msgstr "Ocultar siempre los nombres de las redes sociales en móviles."
+
+#: inc/admin-page.php:89
 msgid "Buttons location"
 msgstr "Ubicación de los botones"
 
-#: inc/admin-page.php:87
+#: inc/admin-page.php:93
 msgid "Before content"
 msgstr "Antes del contenido"
 
-#: inc/admin-page.php:88
+#: inc/admin-page.php:94
 msgid "After content"
 msgstr "Después del contenido"
 
 #: inc/admin-page.php:95
+msgid "Both"
+msgstr "Antes y después del contenido"
+
+#: inc/admin-page.php:102
 msgid "Add buttons to"
 msgstr "Añadir los botones a"
 
-#: inc/admin-page.php:114
+#: inc/admin-page.php:121
 msgid "Sharing text"
 msgstr "Texto junto a los botones"
 
-#: inc/admin-page.php:118
+#: inc/admin-page.php:125
 msgid "Share this!"
 msgstr "¡Compártelo!"
 
-#: inc/admin-page.php:119
+#: inc/admin-page.php:126
 msgid ""
 "Left the field empty if you don't want to display a text before the sharing "
 "buttons"
 msgstr ""
-"Deja este campo vacío si no quieres mostrar ningín texto delante de los "
+"Deja este campo vacío si no quieres mostrar ningún texto delante de los "
 "botones"
 
-#: inc/admin-page.php:126
+#: inc/admin-page.php:133
 msgid "Sharing text position"
 msgstr "Posición del texto"
 
-#: inc/admin-page.php:130
+#: inc/admin-page.php:137
 msgid "Left"
 msgstr "A la izquierda"
 
-#: inc/admin-page.php:131
+#: inc/admin-page.php:138
 msgid "Above"
 msgstr "Arriba"
 
-#: inc/admin-page.php:137
+#: inc/admin-page.php:144
 msgid "Sharing text weight"
-msgstr "Espesor del texto"
+msgstr "Grosor del texto"
 
-#: inc/admin-page.php:161
+#: inc/admin-page.php:168
 msgid "Font Awesome 4 compatibility"
 msgstr "Compatibilidad con Font Awesome 4"
 
-#: inc/admin-page.php:166
+#: inc/admin-page.php:173
 msgid ""
 "Check ONLY if your theme still uses Font Awesome 4, take into account that "
 "some icons might not be rendered."
@@ -134,67 +143,67 @@ msgstr ""
 "Marca esta casilla SOLO si tu tema tiene instalado Font Awesome 4, ten en "
 "cuenta que algunos iconos pueden que no se muestren."
 
-#: inc/admin-page.php:183
+#: inc/admin-page.php:190
 msgid "Play animations?"
 msgstr "¿Usar animaciones?"
 
-#: inc/admin-page.php:189
+#: inc/admin-page.php:196
 msgid ""
 "Here you can decide whether or not to play animations when hovering over the "
 "sharing buttons."
 msgstr ""
-"Aquí puedes decidir si quieres que iconos sociales se animen al hacer hover "
-"sobre los botones."
+"Aquí puedes decidir si quieres que los iconos sociales se animen al hacer "
+"hover sobre los botones."
 
-#: inc/admin-page.php:194
+#: inc/admin-page.php:201
 msgid "Animation Style"
 msgstr "Estilo de la animación"
 
-#: inc/admin-page.php:198
+#: inc/admin-page.php:205
 msgid "Fade"
 msgstr ""
 
-#: inc/admin-page.php:199
+#: inc/admin-page.php:206
 msgid "Slide"
 msgstr ""
 
-#: inc/admin-page.php:200
+#: inc/admin-page.php:207
 msgid "Bounce"
 msgstr ""
 
-#: inc/admin-page.php:201
+#: inc/admin-page.php:208
 msgid "Spin"
 msgstr ""
 
-#: inc/admin-page.php:207
+#: inc/admin-page.php:214
 msgid "Animation Duration"
 msgstr "Duración de la animación"
 
-#: inc/admin-page.php:211
+#: inc/admin-page.php:218
 msgid "300 miliseconds"
 msgstr "300 milisegundos"
 
-#: inc/admin-page.php:212
+#: inc/admin-page.php:219
 msgid "500 miliseconds"
 msgstr "500 milisegundos"
 
-#: inc/admin-page.php:213
+#: inc/admin-page.php:220
 msgid "700 miliseconds"
 msgstr "700 milisegundos"
 
-#: inc/admin-page.php:214
+#: inc/admin-page.php:221
 msgid "1 second"
 msgstr "1 segundo"
 
-#: inc/admin-page.php:215
+#: inc/admin-page.php:222
 msgid "2 seconds"
 msgstr "2 segundos"
 
-#: inc/admin-page.php:216
+#: inc/admin-page.php:223
 msgid "3 seconds"
 msgstr "3 segundos"
 
-#: inc/admin-page.php:226
+#: inc/admin-page.php:233
 msgid ""
 "The shortcode <strong>[jc_buttons]</strong> will render the sharing buttons "
 "as you have customised them in this page. Thanks to this shortcode you can "
@@ -203,6 +212,26 @@ msgstr ""
 "El shortcode <strong>[jc_buttons]</strong> mostrará los botones tal y como "
 "los has configurado en esta página, ¡lo que te permitirá colocarlos "
 "practicamente en cualquier parte!"
+
+#. Plugin Name of the plugin/theme
+msgid "Social Sharing Buttons"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A lightweight SEO-friendly plugin that allows you to share your posts and "
+"get more traffic"
+msgstr ""
+"Un plugin simple, ligero y SEO-friendly que te permite compartir tus posts y "
+"conseguir más trafico"
+
+#. Author of the plugin/theme
+msgid "JC"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://josecarlosroman.com/"
+msgstr ""
 
 #~ msgid ""
 #~ "Here you can decide whether play animations or not when hovering over the "

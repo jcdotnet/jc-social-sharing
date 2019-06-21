@@ -4,7 +4,7 @@ Tags: social, sharing, buttons, media, facebook, twitter, whatsapp, linkedin
 Donate link: https://www.paypal.me/jcrr
 Requires at least: 4.0
 Tested up to: 5.2
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPL3
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -54,6 +54,7 @@ You can help me too either by rating this plugin or by making a donation.
 
 = 1.2.3, date 2019-06-21 =
 - Added the possibility to add the buttons both after and before the post content.
+- Added the possibility to choose whether or not to hide the social names on mobile.
 
 = 1.2.2, date 2019-06-10 =
 - Added compatibility with themes that still use Font Awesome 4.
