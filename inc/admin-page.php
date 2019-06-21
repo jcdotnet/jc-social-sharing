@@ -74,7 +74,13 @@ function jcss_admin_page() { ?>
                             <td class="jcss-radio">
                                 <label><input type="radio" name="jcss_buttons_options[display_names]" value="1" <?php checked($options['display_names'], 1); ?> > <?php _e('Yes', 'social-sharing-buttons-jc'); ?></label>
                                 <label><input type="radio" name="jcss_buttons_options[display_names]" value="0" <?php checked($options['display_names'], 0); ?> > <?php _e('No'); ?></label> 
-                                <p class="description"> <?php _e('Display social network names? You can hide them if you don\'t have enough room for the buttons', 'social-sharing-buttons-jc') ?></p>                
+                                <p class="description"> <?php _e('Display social network names? You can hide them if you don\'t have enough room for the buttons', 'social-sharing-buttons-jc') ?></p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="jcss_buttons_options[hide_on_mobile]" <?php checked( $options['hide_on_mobile'] === 'on' ) ?>> 
+                                        <?php _e("Always hide the social networks names on mobile screen sizes.", 'social-sharing-buttons-jc') ?>
+                                    </label>
+                                </p>                
                             </td>				             
                         </tr>
 

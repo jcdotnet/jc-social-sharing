@@ -5,36 +5,22 @@ if (!defined('JCSS_PLUGIN_DIR')) {
 	exit;
 }
 
-define( 'JCSS_VERSION', '1.1.5' );
-
-function jcss_get_default_buttons_options() {
-	
-	$default_options = array();
-    
-	try {				
-		$default_options = array(
-			'social_options' => 'Facebook,Twitter',
-            'post_types' => array ( 'post' ),
-            'placement' => 'after',
-            'display_names' => 1,  
-            'display_shares' => 1,
-            'twitter_username' => '',                      
-            'sharing_text' => '',
-            'sharing_text_position' => 'left',
-            'sharing_text_weight' => 500
-		);
-	
-	} catch( Exception $e) {				
-	}	
-	return $default_options;		
-}
-
 function jcss_get_buttons_options() {
 	$options = array(); 
 	
 	try {
-		$options = get_option('jcss_buttons_options') ? get_option('jcss_buttons_options') : jcss_get_default_buttons_options();
-	
+        $db_options = get_option('jcss_buttons_options');
+        $options = array(  
+            'social_options'        => isset($db_options['social_options']) ? $db_options['social_options'] : 'Facebook,Twitter',
+            'post_types'            => isset($db_options['post_types']) ? $db_options['post_types'] : array ( 'post' ),
+            'placement'             => isset($db_options['placement']) ? $db_options['placement'] : 'after',
+            'display_names'         => isset($db_options['display_names']) ? $db_options['display_names'] : 1,
+            'hide_on_mobile'        => isset($db_options['hide_on_mobile']) ? $db_options['hide_on_mobile'] : '0',
+            'twitter_username'      => isset($db_options['twitter_username']) ? $db_options['twitter_username'] : '',
+            'sharing_text'          => isset($db_options['sharing_text']) ? $db_options['sharing_text'] : '',
+            'sharing_text_position' => isset($db_options['sharing_text_position']) ? $db_options['sharing_text_position'] : 'left',
+            'sharing_text_weight'   => isset($db_options['sharing_text_weight']) ? $db_options['sharing_text_weight'] : 500,
+		);
 	} catch( Exception $e ) {}
 	
 	return $options;	
@@ -86,7 +72,8 @@ function jcss_get_sharing_text($options, $element_id) {
 }
 
 function jcss_get_social_name($options, $name) {
-    if (!empty($options['display_names'])) { ?> <span class="jcss-social-name"><?php echo $name; ?></span><?php } 
+    if (!empty($options['display_names']))
+        return printf('<span class="jcss-social-name%2$s">%1$s</span>', $name, empty($options['hide_on_mobile']) ? '' : ' jcss-hide');  
 }
 
 function jcss_get_social_list( $values, $include_values ) {
@@ -117,7 +104,8 @@ function jcss_sanitize_buttons($input) {
     else if (isset($input)) $options['post_types'] = array();
     if( isset( $input['placement'] ) ) $options['placement'] = sanitize_text_field( $input['placement'] );     
     if( isset( $input['display_names'] ) ) $options['display_names'] = sanitize_text_field( $input['display_names'] );
-    if( isset( $input['display_shares'] ) ) $options['display_shares'] = sanitize_text_field( $input['display_shares'] );     
+    if( isset( $input['hide_on_mobile'] ) ) $options['hide_on_mobile'] = sanitize_text_field( $input['hide_on_mobile'] );
+    else $options['hide_on_mobile'] = '0';
     if( isset( $input['twitter_username'] ) ) $options['twitter_username'] = sanitize_text_field( $input['twitter_username'] );
     if( isset( $input['sharing_text'] ) ) $options['sharing_text'] = sanitize_text_field( $input['sharing_text'] );     
     if( isset( $input['sharing_text_position'] ) ) $options['sharing_text_position'] = sanitize_text_field( $input['sharing_text_position'] );

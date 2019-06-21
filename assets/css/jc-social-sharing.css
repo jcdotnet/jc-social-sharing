@@ -9,14 +9,13 @@
     text-decoration: none;
     margin: 2px; 
     padding: 5px 10px;
-    min-width: 40px;
     border-radius: 3px;
     box-shadow: none;  
 }
 
 #jcss-buttons-container .jcss-button:hover { opacity: 0.9; }
 
-#jcss-buttons-container a .fab { font-size: 15px; }
+#jcss-buttons-container a i { font-size: 16px; }
 
 #jcss-buffer { background: #231F20; }
 
@@ -30,6 +29,6 @@
 
 #jcss-social-buttons .jcss-social-name { color: #fff; font-weight: 700; margin-left: 5px; }
 
-@media (max-width: 768px) {
-    .jcss-social-name { display: none; }
+@media (max-width: 767px) {
+    .jcss-social-name.jcss-hide { display: none; }
 }
