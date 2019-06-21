@@ -86,6 +86,7 @@ function jcss_admin_page() { ?>
                                 <select id="buttons-location" name="jcss_buttons_options[placement]">
                                     <option value="before" <?php selected($options['placement'], 'before') ?> ><?php _e('Before content', 'social-sharing-buttons-jc') ?></option>
                                     <option value="after" <?php selected($options['placement'], 'after'); ?> ><?php _e('After content', 'social-sharing-buttons-jc') ?></option>
+                                    <option value="both" <?php selected($options['placement'], 'both'); ?> ><?php _e('Both', 'social-sharing-buttons-jc') ?></option>
                                 </select>
                             </td>		
                         </tr>

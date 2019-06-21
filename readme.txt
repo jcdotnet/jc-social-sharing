@@ -11,6 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl.html
 A lightweight SEO-friendly plugin that allows you to share your posts and get more traffic.
 
 == Description ==
+
 Add buttons to share on Buffer, Facebook, LinkedIn, Twitter and WhatsApp. 
 
 This is a simple, responsive and VERY lightweight plugin that offers nice and customizable buttons.
@@ -20,17 +21,16 @@ This is a simple, responsive and VERY lightweight plugin that offers nice and cu
 
 - Sharing support for Buffer, Facebook, LinkedIn, Twitter and WhatsApp.
 - Allows you to drag and drop the buttons you want to display.
-- Allows you to add the buttons to public post types.
+- Allows you to reorder the buttons.
 - Allows you to display the buttons after/before the text content.
 - Allows you to display a text before/above the buttons
 - Allows you to hide the social media names.
 - Allows you to play animations on hover. 
-- Fully responsive
+- Fully responsive.
 - Fully translated into Spanish (es_ES). You can contribute to translate this plugin by contacting the author.
 - This plugin has a small file size and uses the necessary (just a few lines) JavaScript and CSS. 
 - This plugin doesn't use external libraries, only installs font-awesome if hasn't been installed yet.
-- This plugin DOESN'T create any TABLES on the WordPress database. 
-- You can place the social buttons everywhere using the shortcodes this plugin provides.
+- This plugin doesn't create any tables on the WordPress database. 
 
 == Support == 
 
@@ -51,6 +51,9 @@ You can help me too either by rating this plugin or by making a donation.
 3. Plugin settings 2
 
 == Changelog ==
+
+= 1.2.3, date 2019-06-21 =
+- Added the possibility to add the buttons both after and before the post content.
 
 = 1.2.2, date 2019-06-10 =
 - Added compatibility with themes that still use Font Awesome 4.
@@ -104,14 +107,3 @@ You can help me too either by rating this plugin or by making a donation.
 = 1.0.0, date 2017-04-07 = 
 
 - Initial release.
-
-== Upgrade Notice ==
- 
-= 1.2.1 =
-This plugin needs Font Awesome 5. If your theme is using a previous version please upgrade in order for the icons to be rendered. If not, just ignore this notice (Font Awesome will be installed by this plugin if needed). 
-
-
-
-
-
-

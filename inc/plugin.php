@@ -10,7 +10,7 @@ function stylesheet_installed($array_css) {
     
     foreach( $wp_styles->queue as $style ) {
         foreach ($array_css as $css) {
-            if (false !== strpos( $wp_styles->registered[$style]->src, $css )) {
+            if (false !== strpos( $style, $css ) || false !== strpos( $wp_styles->registered[$style]->src, $css )) {
                 return 1;
             }
         }
@@ -24,7 +24,7 @@ function jcss_scripts() {
     if (!empty($options['post_types'])) {
         
         /* enqueue styles to head, font-awesome only if wasn't enqueued before */
-        $font_awesome = array('font-awesome', 'fontawesome');        
+        $font_awesome = array('font-awesome', 'fontawesome', 'font_awesome');        
         if (stylesheet_installed($font_awesome) === 0) {
             wp_enqueue_style('jcss-font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'); 
         }      
@@ -47,25 +47,24 @@ function jcss_register_shortcodes() {
 add_action( 'init', 'jcss_register_shortcodes');
 
 
-function jcss_add_social_buttons($content) 
-{    
+function jcss_add_social_buttons($content) {    
     $options = jcss_get_buttons_options();   
     $jcss_content = $content;
     
-    if( !empty( $options['post_types'] ) && in_array( get_post_type(), $options['post_types'] ) && is_singular( $options['post_types'] ) ) 
-    {
-        if ( !empty( $options['placement']) && $options['placement'] === "before")
+    if( !empty( $options['post_types'] ) && in_array( get_post_type(), $options['post_types'] ) && is_singular( $options['post_types'] ) ) {
+        if ( $options['placement'] === "before" )
             $jcss_content = jcss_social_buttons() . $content;
-        else
-            $jcss_content .= jcss_social_buttons();              
+        else if ( $options['placement'] === "after" )
+            $jcss_content .= jcss_social_buttons(); 
+        else              
+            $jcss_content = jcss_social_buttons() . $content . jcss_social_buttons();
     }
     return $jcss_content;
 }
 add_filter('the_content', 'jcss_add_social_buttons');
 
 
-function jcss_load_plugin_textdomain() 
-{
+function jcss_load_plugin_textdomain() {
     load_plugin_textdomain( 'social-sharing-buttons-jc', false, 'social-sharing-buttons-and-counters/languages/' );
 }
 add_action( 'plugins_loaded', 'jcss_load_plugin_textdomain' );
