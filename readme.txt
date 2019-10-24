@@ -3,7 +3,7 @@ Contributors: jcrr
 Tags: social, sharing, buttons, media, facebook, twitter, whatsapp, linkedin 
 Donate link: https://www.paypal.me/jcrr
 Requires at least: 4.0
-Tested up to: 5.2
+Tested up to: 5.3
 Stable tag: 1.2.3
 License: GPL3
 License URI: https://www.gnu.org/licenses/gpl.html
