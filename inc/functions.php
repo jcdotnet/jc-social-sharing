@@ -60,8 +60,7 @@ function jcss_get_fa_classnames($advanced, $social) {
     }
 }
 
-function jcss_get_sharing_text($options, $element_id) {
-    ?>
+function jcss_get_sharing_text($options, $element_id) { ?>
     <div id="<?php echo $element_id ?>">
         <span
             <?php if (!empty($options['sharing_text_weight'])):?> style="font-weight:<?php echo $options['sharing_text_weight']?>" <?php endif; ?>>
@@ -77,7 +76,7 @@ function jcss_get_social_name($options, $name) {
 }
 
 function jcss_get_social_list( $values, $include_values ) {
-    $socials = array('Facebook', 'Twitter', 'LinkedIn', 'Buffer', 'WhatsApp');
+    $socials = array('Facebook', 'Twitter', 'LinkedIn', 'Buffer', 'Telegram', 'WhatsApp');
     $values_array = explode(',', $values);
 
     $html = '';

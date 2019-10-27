@@ -1,10 +1,10 @@
 === Social Sharing Buttons ===
 Contributors: jcrr
-Tags: social, sharing, buttons, media, facebook, twitter, whatsapp, linkedin 
+Tags: social, share, buttons, facebook, twitter, whatsapp, telegram 
 Donate link: https://www.paypal.me/jcrr
 Requires at least: 4.0
 Tested up to: 5.3
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 License: GPL3
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -12,7 +12,7 @@ A lightweight SEO-friendly plugin that allows you to share your posts and get mo
 
 == Description ==
 
-Add buttons to share on Buffer, Facebook, LinkedIn, Twitter and WhatsApp. 
+Add buttons to share on Buffer, Facebook, LinkedIn, Telegram, Twitter and WhatsApp. 
 
 This is a simple, responsive and VERY lightweight plugin that offers nice and customizable buttons.
    
@@ -52,6 +52,10 @@ You can help me too either by rating this plugin or by making a donation.
 
 == Changelog ==
 
+= 1.2.4, date 2019-10-27 =
+- Added Telegram.
+- Fixed the WhatsApp share link.
+
 = 1.2.3, date 2019-06-21 =
 - Added the possibility to add the buttons both after and before the post content.
 - Added the possibility to choose whether or not to hide the social names on mobile.
@@ -60,7 +64,7 @@ You can help me too either by rating this plugin or by making a donation.
 - Added compatibility with themes that still use Font Awesome 4.
 
 = 1.2.1, date 2019-06-09 =
-- Removed Google+.
+- Removed Google+ (no longer available).
 - Added Buffer.
 - Upgraded Font Awesome to version 5. If your theme is using a previous version please upgrade in order for the icons to be rendered. If not, just ignore this notice (Font Awesome will be installed by this plugin if needed). 
 

@@ -56,8 +56,14 @@ function jcss_social_buttons() {
                         <?php jcss_get_social_name($options, $social);  ?>
                     </a>  <?php
                 break;
+                case "Telegram": ?>
+                    <a id="jcss-telegram" rel="external nofollow" class="jcss-button" href="https://telegram.me/share/url?url=<?php echo $url; ?>&text=<?php echo $title; ?>" target="_blank" >
+                        <i class="<?php echo jcss_get_fa_classnames($advanced, 'telegram'); ?>"></i>
+                        <?php jcss_get_social_name($options, $social);  ?>
+                    </a>  <?php
+                break;
                 case "WhatsApp": ?>
-                    <a id="jcss-whatsapp" rel="external nofollow" class="jcss-button" href="whatsapp://send?text=<?php echo $title.' – '.$url ?>" data-action = "share/whatsapp/share" target="_blank" >
+                    <a id="jcss-whatsapp" rel="external nofollow" class="jcss-button" href="https://api.whatsapp.com/send?text=<?php echo $title.'–'.$url ?>" target="_blank" >
                         <i class="<?php echo jcss_get_fa_classnames($advanced, 'whatsapp'); ?>"></i>
                         <?php jcss_get_social_name($options, $social); ?>
                     </a>  <?php
