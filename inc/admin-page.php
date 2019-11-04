@@ -9,7 +9,7 @@ function jcss_admin_page() { ?>
 
     <div class="wrap">     
 
-        <h2> Social Sharing Buttons </h2>
+        <h2> JC Social Sharing </h2>
 
         <?php $active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'buttons'; ?>
 

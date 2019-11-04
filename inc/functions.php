@@ -54,8 +54,9 @@ function jcss_get_animation_options() {
 function jcss_get_fa_classnames($advanced, $social) {
     $fa_classname =  $advanced['fa4'] === 'on' ? 'fa ' : 'fab ';
     switch ($social) {
+        case 'email' : return $advanced['fa4'] === 'on' ? 'fa fa-envelope' : 'fas fa-envelope';
         case 'facebook' : return $fa_classname . ($advanced['fa4'] === 'on' ? 'fa-facebook' : 'fa-facebook-f');
-        case 'linkedin' : return $fa_classname . ($advanced['fa4'] === 'on' ? 'fa-linkedin' : 'fa-linkedin-in');
+        case 'linkedin' : return $fa_classname . ($advanced['fa4'] === 'on' ? 'fa-linkedin' : 'fa-linkedin-in'); 
         default: return $fa_classname . "fa-$social";  
     }
 }
@@ -76,7 +77,7 @@ function jcss_get_social_name($options, $name) {
 }
 
 function jcss_get_social_list( $values, $include_values ) {
-    $socials = array('Facebook', 'Twitter', 'LinkedIn', 'Buffer', 'Telegram', 'WhatsApp');
+    $socials = array('Facebook', 'Twitter', 'LinkedIn', 'Buffer', 'Telegram', 'Email', 'WhatsApp');
     $values_array = explode(',', $values);
 
     $html = '';

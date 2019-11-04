@@ -32,6 +32,6 @@ function jcss_register_options() {
     register_setting('jcss_plugin_options', 'jcss_animation_options', 'jcss_sanitize_animations');
 }
 
-function jcss_add_menu(){
-    add_options_page( 'Social Sharing Buttons', 'Social Sharing Buttons', 'manage_options', 'social-sharing-buttons-jc', 'jcss_admin_page');
+function jcss_add_menu() {
+    add_options_page( 'JC Social Sharing', 'JC Social Sharing', 'manage_options', 'social-sharing-buttons-jc', 'jcss_admin_page');
 }

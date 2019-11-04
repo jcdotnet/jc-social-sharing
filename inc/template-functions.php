@@ -37,7 +37,7 @@ function jcss_social_buttons() {
                         <i class="<?php echo jcss_get_fa_classnames($advanced, 'facebook'); ?>"></i>
                         <?php jcss_get_social_name($options, $social); ?>
                     </a>  <?php
-                break;
+                break;  
                 case "Twitter": ?>
                     <a id="jcss-twitter" rel="external nofollow" class="jcss-button" href="http://twitter.com/intent/tweet/?text=<?php echo $title; ?>&url=<?php echo $url; if(!empty($twitter_username)) { echo '&via=' . $twitter_username; } ?>" target="_blank" >
                         <i class="<?php echo jcss_get_fa_classnames($advanced, 'twitter'); ?>"></i>    
@@ -54,6 +54,12 @@ function jcss_social_buttons() {
                     <a id="jcss-buffer" rel="external nofollow" class="jcss-button" href="https://bufferapp.com/add?text=<?php echo $title; ?>&url=<?php echo $url; ?>" target="_blank" >
                         <i class="<?php echo jcss_get_fa_classnames($advanced, 'buffer'); ?>"></i>
                         <?php jcss_get_social_name($options, $social);  ?>
+                    </a>  <?php
+                break;
+                case "Email": ?>
+                    <a id="jcss-email" rel="external nofollow" class="jcss-button jcss-email" href="mailto:?subject=<?php echo $title; ?>&body=<?php echo $url ?>" target="_blank" >
+                        <i class="<?php echo jcss_get_fa_classnames($advanced, 'email'); ?>"></i>
+                        <?php jcss_get_social_name($options, $social); ?>
                     </a>  <?php
                 break;
                 case "Telegram": ?>

@@ -2,6 +2,7 @@ window.onload = function() {
     
     var buttons = document.getElementsByClassName('jcss-button');
     for (var i = 0; i< buttons.length; i++) {
+        if (buttons[i].id === 'jcss-email') continue;
         buttons[i].addEventListener('click', function(e) {   
             e.preventDefault();
     
