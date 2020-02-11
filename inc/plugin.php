@@ -5,7 +5,7 @@ if (!defined('JCSS_PLUGIN_DIR')) {
 	exit;
 }
 
-function stylesheet_installed($array_css) {
+function jcss_stylesheet_installed($array_css) {
     global $wp_styles;
     
     foreach( $wp_styles->queue as $style ) {
@@ -21,13 +21,16 @@ function stylesheet_installed($array_css) {
 function jcss_scripts() {
     $options = jcss_get_buttons_options();
     
-    if (!empty($options['post_types'])) {
+    if (!empty($options['post_types']) && in_array(get_post_type(), $options['post_types'])) {
         
-        /* enqueue styles to head, font-awesome only if wasn't enqueued before */
-        $font_awesome = array('font-awesome', 'fontawesome', 'font_awesome');        
-        if (stylesheet_installed($font_awesome) === 0) {
-            wp_enqueue_style('jcss-font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'); 
-        }      
+        $advanced = jcss_get_advanced_options(); 
+        if ($advanced['no_fa'] !== 'on') {
+            /* enqueue styles to head, font-awesome only if wasn't enqueued before */
+            $font_awesome = array('font-awesome', 'fontawesome', 'font_awesome');        
+            if (jcss_stylesheet_installed($font_awesome) === 0) { 
+                wp_enqueue_style('jcss-font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'); 
+            }      
+        }
         wp_enqueue_style('jcss-styles', JCSS_PLUGIN_URL . 'assets/css/jc-social-sharing.css', array(), JCSS_VERSION);
 
         /* enqueue scripts to body */

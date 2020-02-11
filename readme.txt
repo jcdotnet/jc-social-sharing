@@ -4,7 +4,7 @@ Tags: social, share, buttons, facebook, twitter, whatsapp, telegram
 Donate link: https://www.paypal.me/jcrr
 Requires at least: 4.0
 Tested up to: 5.3
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 License: GPL3
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -51,6 +51,9 @@ You can help me too either by rating this plugin or by making a donation.
 3. Plugin settings 2
 
 == Changelog ==
+
+= 1.2.6 date 2020-02-11 =
+- Performance update: loading the plugin assets only when needed
 
 = 1.2.5 date 2019-11-04 =
 - Changed the plugin name.

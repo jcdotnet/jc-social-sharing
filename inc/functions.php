@@ -31,7 +31,8 @@ function jcss_get_advanced_options() {
 	try {
 		$db_options = get_option('jcss_advanced_options');
         $options = array(  
-            'fa4' => isset($db_options['fa4']) ? $db_options['fa4'] : '0'
+            'fa4' => isset($db_options['fa4']) ? $db_options['fa4'] : '0',
+            'no_fa' => isset($db_options['no_fa']) ? $db_options['no_fa'] : '0'
 		);
     } catch( Exception $e ) {}
 	return $options;
@@ -118,6 +119,8 @@ function jcss_sanitize_advanced($input) {
     $options = jcss_get_advanced_options();
     if( isset( $input['fa4'] ) ) $options['fa4'] = sanitize_text_field( $input['fa4'] );
     else $options['fa4'] = '0';
+    if( isset( $input['no_fa'] ) ) $options['no_fa'] = sanitize_text_field( $input['no_fa'] );
+    else $options['no_fa'] = '0';
     return $options;
 }
 

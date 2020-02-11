@@ -174,6 +174,17 @@ function jcss_admin_page() { ?>
                                 </label>
                             </td>			
                         </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="do-not-use-fa"><?php _e('Do not enqueue Font Awesome', 'social-sharing-buttons-jc') ?></label>
+                            </th>
+                            <td id="do-not-use-fa">        
+                                <label>
+                                    <input type="checkbox" name="jcss_advanced_options[no_fa]" <?php checked( $options['no_fa'] === 'on' ) ?>> 
+                                    <?php _e("We strongly recommend that only advanced developers check this option.", 'social-sharing-buttons-jc') ?>
+                                </label>
+                            </td>			
+                        </tr>
                     </tbody>
                 </table>
                 <?php submit_button(); ?>

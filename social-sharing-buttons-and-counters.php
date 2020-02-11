@@ -2,7 +2,7 @@
 /*
 Plugin Name: JC Social Sharing
 Description: A lightweight SEO-friendly plugin that allows you to share your posts and get more traffic
-Version:     1.2.5
+Version:     1.2.6
 Author:      JC
 Author URI:  https://josecarlosroman.com/
 License:     GPL3
@@ -18,7 +18,7 @@ if ( !defined('ABSPATH') ) {
 
 define( 'JCSS_PLUGIN_DIR', plugin_dir_path(__FILE__) );
 define( 'JCSS_PLUGIN_URL', plugin_dir_url(__FILE__) );
-define( 'JCSS_VERSION', '1.2.5' );
+define( 'JCSS_VERSION', '1.2.6' );
 
 require_once JCSS_PLUGIN_DIR . 'inc/functions.php';
 require_once JCSS_PLUGIN_DIR . 'inc/template-functions.php';

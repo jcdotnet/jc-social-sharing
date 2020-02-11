@@ -1,15 +1,15 @@
-# Copyright (C) 2019 JC
+# Copyright (C) 2020 JC
 # This file is distributed under the GPL3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Social Sharing Buttons 1.2.2\n"
+"Project-Id-Version: JC Social Sharing 1.2.5\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/social-sharing-buttons-and-counters\n"
-"POT-Creation-Date: 2019-06-21 16:06:15+00:00\n"
+"POT-Creation-Date: 2020-02-11 18:37:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en\n"
@@ -61,11 +61,11 @@ msgstr ""
 msgid "Buttons text "
 msgstr ""
 
-#: inc/admin-page.php:75 inc/admin-page.php:192
+#: inc/admin-page.php:75 inc/admin-page.php:203
 msgid "Yes"
 msgstr ""
 
-#: inc/admin-page.php:76 inc/admin-page.php:193
+#: inc/admin-page.php:76 inc/admin-page.php:204
 msgid "No"
 msgstr ""
 
@@ -139,65 +139,73 @@ msgid ""
 "some icons might not be rendered."
 msgstr ""
 
-#: inc/admin-page.php:190
+#: inc/admin-page.php:179
+msgid "Do not enqueue Font Awesome"
+msgstr ""
+
+#: inc/admin-page.php:184
+msgid "We strongly recommend that only advanced developers check this option."
+msgstr ""
+
+#: inc/admin-page.php:201
 msgid "Play animations?"
 msgstr ""
 
-#: inc/admin-page.php:196
+#: inc/admin-page.php:207
 msgid ""
 "Here you can decide whether or not to play animations when hovering over "
 "the sharing buttons."
 msgstr ""
 
-#: inc/admin-page.php:201
+#: inc/admin-page.php:212
 msgid "Animation Style"
 msgstr ""
 
-#: inc/admin-page.php:205
+#: inc/admin-page.php:216
 msgid "Fade"
 msgstr ""
 
-#: inc/admin-page.php:206
+#: inc/admin-page.php:217
 msgid "Slide"
 msgstr ""
 
-#: inc/admin-page.php:207
+#: inc/admin-page.php:218
 msgid "Bounce"
 msgstr ""
 
-#: inc/admin-page.php:208
+#: inc/admin-page.php:219
 msgid "Spin"
 msgstr ""
 
-#: inc/admin-page.php:214
+#: inc/admin-page.php:225
 msgid "Animation Duration"
 msgstr ""
 
-#: inc/admin-page.php:218
+#: inc/admin-page.php:229
 msgid "300 miliseconds"
 msgstr ""
 
-#: inc/admin-page.php:219
+#: inc/admin-page.php:230
 msgid "500 miliseconds"
 msgstr ""
 
-#: inc/admin-page.php:220
+#: inc/admin-page.php:231
 msgid "700 miliseconds"
 msgstr ""
 
-#: inc/admin-page.php:221
+#: inc/admin-page.php:232
 msgid "1 second"
 msgstr ""
 
-#: inc/admin-page.php:222
+#: inc/admin-page.php:233
 msgid "2 seconds"
 msgstr ""
 
-#: inc/admin-page.php:223
+#: inc/admin-page.php:234
 msgid "3 seconds"
 msgstr ""
 
-#: inc/admin-page.php:233
+#: inc/admin-page.php:244
 msgid ""
 "The shortcode <strong>[jc_buttons]</strong> will render the sharing buttons "
 "as you have customised them in this page. Thanks to this shortcode you can "
@@ -205,7 +213,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "Social Sharing Buttons"
+msgid "JC Social Sharing"
 msgstr ""
 
 #. Description of the plugin/theme
