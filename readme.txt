@@ -3,7 +3,7 @@ Contributors: jcrr
 Tags: social, share, buttons, facebook, twitter, whatsapp, telegram 
 Donate link: https://www.paypal.me/jcrr
 Requires at least: 4.0
-Tested up to: 5.3
+Tested up to: 5.4
 Stable tag: 1.2.6
 License: GPL3
 License URI: https://www.gnu.org/licenses/gpl.html
