@@ -28,7 +28,7 @@ function jcss_scripts() {
             /* enqueue styles to head, font-awesome only if wasn't enqueued before */
             $font_awesome = array('font-awesome', 'fontawesome', 'font_awesome');        
             if (jcss_stylesheet_installed($font_awesome) === 0) { 
-                wp_enqueue_style('jcss-font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'); 
+                wp_enqueue_style('jcss-font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'); 
             }      
         }
         wp_enqueue_style('jcss-styles', JCSS_PLUGIN_URL . 'assets/css/jc-social-sharing.css', array(), JCSS_VERSION);

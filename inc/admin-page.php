@@ -23,9 +23,6 @@ function jcss_admin_page() { ?>
             <a href="?page=social-sharing-buttons-jc&tab=animation" class="nav-tab <?php echo $active_tab == 'animation' ? 'nav-tab-active' : ''; ?>"> 
                 <?php _e('Animation', 'social-sharing-buttons-jc'); ?>
             </a>
-            <a href="?page=social-sharing-buttons-jc&tab=shortcodes" class="nav-tab <?php echo $active_tab == 'shortcodes' ? 'nav-tab-active' : ''; ?>"> 
-                Shortcodes
-            </a>
         </h2>
 
         <?php if ( $active_tab === 'buttons' ) { 
@@ -59,7 +56,7 @@ function jcss_admin_page() { ?>
                                     <h4><label for="twitter-username"><?php _e('Twitter username', 'social-sharing-buttons-jc')?> </label></h4>
                                         <input id="twitter-username" type="text" name="jcss_buttons_options[twitter_username]" 
                                             placeholder="<?php _e('username without @', 'social-sharing-buttons-jc') ?>" value="<?php echo esc_attr($options['twitter_username']) ?>">
-                                        <p class="description"> <?php _e('Enter your username if you wanted it to be appended to the tweets', 'social-sharing-buttons-jc') ?></p>
+                                        <p class="description"> <?php _e('Enter your username if you want it to be appended to the tweets', 'social-sharing-buttons-jc') ?></p>
 
                                 </div>
 
@@ -108,7 +105,7 @@ function jcss_admin_page() { ?>
                                         <li>
                                             <label>
                                                 <input type="checkbox" name="jcss_buttons_options[post_types][]" value="<?php echo esc_attr( $post_type_id ); ?>" 
-                                                <?php checked( in_array( $post_type_id, $options['post_types'] ), true ) ?>> <?php echo $post_type->labels->name; ?>
+                                                <?php checked( in_array( $post_type_id, $options['post_types'] ), true ) ?>> <?php echo esc_html($post_type->labels->name); ?>
                                             </label>
                                         </li>
                                     <?php endforeach; ?>
@@ -165,12 +162,12 @@ function jcss_admin_page() { ?>
                     <tbody>
                         <tr>
                             <th scope="row">
-                                <label for="use-fa4"><?php _e('Font Awesome 4 compatibility', 'social-sharing-buttons-jc') ?></label>
+                                <label for="use-fa4"><?php _e('Font Awesome 4 (2017) compatibility', 'social-sharing-buttons-jc') ?></label>
                             </th>
                             <td id="use-fa4">        
                                 <label>
                                     <input type="checkbox" name="jcss_advanced_options[fa4]" <?php checked( $options['fa4'] === 'on' ) ?>> 
-                                    <?php _e("Check ONLY if your theme still uses Font Awesome 4, take into account that some icons might not be rendered.", 'social-sharing-buttons-jc') ?>
+                                    <?php _e('Check only if your theme still uses Font Awesome 4, take into account that some icons (latest ones) might not be rendered.', 'social-sharing-buttons-jc') ?>
                                 </label>
                             </td>			
                         </tr>
@@ -181,7 +178,7 @@ function jcss_admin_page() { ?>
                             <td id="do-not-use-fa">        
                                 <label>
                                     <input type="checkbox" name="jcss_advanced_options[no_fa]" <?php checked( $options['no_fa'] === 'on' ) ?>> 
-                                    <?php _e("We strongly recommend that only advanced developers check this option.", 'social-sharing-buttons-jc') ?>
+                                    <?php _e('We strongly recommend that only advanced users check this option.', 'social-sharing-buttons-jc') ?>
                                 </label>
                             </td>			
                         </tr>
@@ -189,7 +186,7 @@ function jcss_admin_page() { ?>
                 </table>
                 <?php submit_button(); ?>
             </form> <?php 
-        } else if ( $active_tab === 'animation' ) { 
+        } else { // animation 
             $options = jcss_get_animation_options(); ?>
             <form action="options.php" method="post">         
                 <?php
@@ -239,10 +236,6 @@ function jcss_admin_page() { ?>
                 </table>
                 <?php submit_button(); ?>    
             </form> <?php
-        } else { ?>
-            <h3>[jc_buttons] </h3>
-            <p><?php _e('The shortcode <strong>[jc_buttons]</strong> will render the sharing buttons as you have customised them in this page. Thanks to this shortcode you can place the buttons anywhere!', 'social-sharing-buttons-jc') ?> </p>
-            <?php
         } ?>         
     </div> <?php
 }

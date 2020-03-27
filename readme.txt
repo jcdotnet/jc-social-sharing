@@ -4,7 +4,7 @@ Tags: social, share, buttons, facebook, twitter, whatsapp, telegram
 Donate link: https://www.paypal.me/jcrr
 Requires at least: 4.0
 Tested up to: 5.4
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 License: GPL3
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -12,14 +12,14 @@ A lightweight SEO-friendly plugin that allows you to share your posts and get mo
 
 == Description ==
 
-Add buttons to share on Buffer, Facebook, LinkedIn, Telegram, Twitter and WhatsApp. 
+Add buttons to share on Buffer, Facebook, LinkedIn, Pinterest, Telegram, Twitter and WhatsApp. 
 
 This is a simple, responsive and VERY lightweight plugin that offers nice and customizable buttons.
    
 
 == Features ==
 
-- Sharing support for Buffer, Facebook, LinkedIn, Telegram, Twitter and WhatsApp.
+- Sharing support for Buffer, Facebook, LinkedIn, Pinterest, Telegram, Twitter and WhatsApp.
 - Allows you to drag and drop the buttons you want to display.
 - Allows you to reorder the buttons.
 - Allows you to display the buttons after/before the text content.
@@ -29,7 +29,7 @@ This is a simple, responsive and VERY lightweight plugin that offers nice and cu
 - Fully responsive.
 - Fully translated into Spanish (es_ES). You can contribute to translate this plugin by contacting the author.
 - This plugin has a small file size and uses the necessary (just a few lines) JavaScript and CSS. 
-- This plugin doesn't use external libraries, only installs font-awesome if hasn't been installed yet.
+- This plugin doesn't use external libraries, only installs Font Awesome if hasn't been installed yet.
 - This plugin doesn't create any tables on the WordPress database. 
 
 == Support == 
@@ -51,6 +51,9 @@ You can help me too either by rating this plugin or by making a donation.
 3. Plugin settings 2
 
 == Changelog ==
+
+= 1.2.7 date 2020-03-27 =
+- Added Pinterest
 
 = 1.2.6 date 2020-02-11 =
 - Performance update: loading the plugin assets only when needed
