@@ -66,6 +66,12 @@ function jcss_social_buttons() {
                         <?php jcss_get_social_name($options, $social);  ?>
                     </a>  <?php
                 break;
+                case "Reddit": ?>
+                    <a id="jcss-reddit" rel="external nofollow" class="jcss-button" href="https://www.reddit.com/submit?url=<?php echo $url; ?>&title=<?php echo $title; ?>" target="_blank" >
+                        <i class="<?php echo jcss_get_fa_classnames($advanced, 'reddit'); ?>"></i>
+                        <?php jcss_get_social_name($options, $social); ?>
+                    </a>  <?php
+                break; 
                 case "Telegram": ?>
                     <a id="jcss-telegram" rel="external nofollow" class="jcss-button" href="https://telegram.me/share/url?url=<?php echo $url; ?>&text=<?php echo $title; ?>" target="_blank" >
                         <i class="<?php echo jcss_get_fa_classnames($advanced, 'telegram'); ?>"></i>

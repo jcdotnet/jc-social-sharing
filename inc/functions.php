@@ -78,7 +78,7 @@ function jcss_get_social_name($options, $name) {
 }
 
 function jcss_get_social_list( $values, $include_values ) {
-    $socials = array('Facebook', 'Twitter', 'LinkedIn', 'Buffer', 'Pinterest', 'Telegram', 'Email', 'WhatsApp');
+    $socials = array('Facebook', 'Twitter', 'LinkedIn', 'Buffer', 'Pinterest', 'Reddit', 'Telegram', 'Email', 'WhatsApp');
     $values_array = explode(',', $values);
 
     $html = '';

@@ -1,10 +1,10 @@
 === JC Social Sharing ===
 Contributors: jcrr
-Tags: social, share, buttons, facebook, twitter, whatsapp, telegram 
+Tags: social, buttons, facebook, twitter, whatsapp, telegram, share 
 Donate link: https://www.paypal.me/jcrr
 Requires at least: 4.0
 Tested up to: 5.4
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 License: GPL3
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -12,25 +12,25 @@ A lightweight SEO-friendly plugin that allows you to share your posts and get mo
 
 == Description ==
 
-Add buttons to share on Buffer, Facebook, LinkedIn, Pinterest, Telegram, Twitter and WhatsApp. 
+Add buttons to share your posts on Buffer, Facebook, LinkedIn, Pinterest, Reddit, Telegram, Twitter and WhatsApp. 
 
 This is a simple, responsive and VERY lightweight plugin that offers nice and customizable buttons.
    
 
 == Features ==
 
-- Sharing support for Buffer, Facebook, LinkedIn, Pinterest, Telegram, Twitter and WhatsApp.
 - Allows you to drag and drop the buttons you want to display.
 - Allows you to reorder the buttons.
-- Allows you to display the buttons after/before the text content.
-- Allows you to display a text before/above the buttons
-- Allows you to hide the social media names.
+- Allows you to display the buttons after/before the post content.
+- Allows you to display a custom text before/above the buttons.
+- Allows you to hide the social networks names.
 - Allows you to play animations on hover. 
 - Fully responsive.
 - Fully translated into Spanish (es_ES). You can contribute to translate this plugin by contacting the author.
-- This plugin has a small file size and uses the necessary (just a few lines) JavaScript and CSS. 
-- This plugin doesn't use external libraries, only installs Font Awesome if hasn't been installed yet.
-- This plugin doesn't create any tables on the WordPress database. 
+- SEO-friendly: This plugin has a small file size and uses the necessary PHP, JS and CSS code.
+- SEO-friendly: No external libraries (only uses Font Awesome if hasn't been installed yet).
+- SEO-friendly: No external requests.
+- Sharing support for Buffer, Facebook, LinkedIn, Pinterest, Reddit, Telegram, Twitter and WhatsApp.    
 
 == Support == 
 
@@ -51,6 +51,9 @@ You can help me too either by rating this plugin or by making a donation.
 3. Plugin settings 2
 
 == Changelog ==
+
+= 1.2.8 date 2020-05-13 =
+- Added Reddit
 
 = 1.2.7 date 2020-03-27 =
 - Added Pinterest
