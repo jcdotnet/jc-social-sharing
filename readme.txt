@@ -3,7 +3,7 @@ Contributors: jcrr
 Tags: social, buttons, facebook, twitter, whatsapp, telegram, share 
 Donate link: https://www.paypal.me/jcrr
 Requires at least: 4.0
-Tested up to: 5.4
+Tested up to: 5.5
 Stable tag: 1.2.8
 License: GPL3
 License URI: https://www.gnu.org/licenses/gpl.html
@@ -30,7 +30,8 @@ This is a simple, responsive and VERY lightweight plugin that offers nice and cu
 - SEO-friendly: This plugin has a small file size and uses the necessary PHP, JS and CSS code.
 - SEO-friendly: No external libraries (only uses Font Awesome if hasn't been installed yet).
 - SEO-friendly: No external requests.
-- Sharing support for Buffer, Facebook, LinkedIn, Pinterest, Reddit, Telegram, Twitter and WhatsApp.    
+- Sharing support for Buffer, Facebook, LinkedIn, Pinterest, Reddit, Telegram, Twitter and WhatsApp.
+- GDPR compliant    
 
 == Support == 
 
